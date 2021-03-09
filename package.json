@@ -1,0 +1,17 @@
+{
+  "name": "practica4",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "*",
+    "mocha": "*",
+    "typedoc": "^0.20.30"
+  }
+}

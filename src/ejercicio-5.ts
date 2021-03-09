@@ -1,0 +1,5 @@
+function multiplyAll(numero: number[]) {
+  
+
+
+}
