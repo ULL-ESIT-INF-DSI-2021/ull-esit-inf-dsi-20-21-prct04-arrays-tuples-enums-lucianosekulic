@@ -1,5 +1,4 @@
-function meshArray (textChain: string[]) { //recibe por parametros un array de strings
-  let stringAux : string[] = [];
+  function meshArray (textChain: string[]) { //recibe por parametros un array de strings
   let string_: string = " ";
   /*for (let i = 0; i < textChain.length; i++) { ///metemos las paalbras en un array
     arrayAux[i] = textChain[i];

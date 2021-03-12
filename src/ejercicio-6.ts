@@ -1,23 +1,50 @@
-function sumar(puntoA: number[], puntoB: number[]){
-let puntoC: number[] = puntoA;
+type point = [number, number];
+function sumar(puntoA: [number, number], puntoB: [number, number]){
+let puntoC: point = puntoA;
 puntoC[0] += puntoB[0];
 puntoC[1] += puntoB[1];
+return puntoC;
 }
 
-function restar() {
-
+function restar(puntoA: [number, number], puntoB: [number, number]) {
+  let puntoC: point = puntoA;
+  puntoC[0] += puntoB[0];
+  puntoC[1] += puntoB[1];
+  return puntoC;
 }
 
+function multiplicar(puntoA: [number, number], num: number) {
+  let puntoC: point = puntoA;
+  puntoC[0] = puntoC[0] * num;
+  puntoC[1] = puntoC[1] * num;
+  return puntoC;
+}
+
+function euclidean(puntoA: [number, number], puntoB: [number, number]) {
+  let distEuclidean: number = 0;
+  distEuclidean = Math.sqrt((Math.pow((puntoA[1] - puntoA[0]), 2) + Math.pow((puntoB[1] - puntoB[0]), 2)));
+  return distEuclidean;
+}
+
+let puntoA: point;
+let puntoB: point;
+let num = 5;
+puntoA.push(1, 1);
+puntoB.push(2, 2);
+let test4 = sumar(puntoA, puntoB); 
+console.log(`result: ${test4}`);
+
+let test5 = restar(puntoA, puntoB); 
+console.log(`result: ${test5}`);
+
+let test6 = multiplicar(puntoA, num); 
+console.log(`result: ${test6}`);
+
+let test7 = euclidean(puntoA, puntoB); 
+console.log(`result: ${test7}`);
 
 
 
-let puntoA: number[] = [1,1];
-let puntoB: number[] = [2,2];
-
-if dos puntos igual dimension
-c =a 
-for desde 0 hasta c 
-    c i += bi
 
 
 
