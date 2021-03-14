@@ -320,9 +320,50 @@ En esencia es lo mismo que lo explicado anteriormente en el ejercicio 6, sin emb
 
 ## Ejercicio 8: El agente
 
+Código TypeScript
+``` 
+type punto = [number, number];
+
+function agent(x: number, y: number, puntoA: punto, puntoB: punto) {
+  let arrayFinal: string = " ";
+  let numX: number = 0;
+  let numY: number = 0;
+
+  while(puntoA[0] != puntoB[0] && puntoA[1] != puntoB[1]) {
+    if(puntoA[numY] < puntoB[numY]) {
+      arrayFinal += "norte ";
+      puntoA[numY]++;
+    }
+    else if(puntoA[numY] > puntoB[numY]) {
+      arrayFinal += "sur ";
+      puntoA[numY]--;
+    }
+    else if(puntoA[numX] < puntoB[numX]) {
+      arrayFinal += "este ";
+      puntoA[numX]++;
+    }
+    else if(puntoA[numX] > puntoB[numX]) {
+      arrayFinal += "oeste ";
+      puntoA[numX]--;
+    }
+  }
+  return arrayFinal;
+}
+
+let puntoInicial: punto = [1, 3];
+let puntoFinal: punto = [3, 5];
+let x: number;
+let y: number;
+let test8 = agent(x, y, puntoInicial, puntoFinal);
+console.log(`result: ${test8}`);
+```
+
+En esta función llamada ***agent***, nos proponemos a devolver un array con el camino que recorre el agente desde su punto inicial hasta el final. Para ello, creamos un bucle while donde mintras el puntoA[x][y] no sea igual que el puntoB[x][y] vamos mirando con unas sentencias if, dependiendo si se mueve a la derecha, izquierd, arriba o abajo, que dirección (norte, sur, este y oeste) introducimos en el string donde va el "camino".
 
 
+## Conclusiones
 
+En esta práctica 4 de la asignaura ***Desarrollo de Sistemas Informáticos*** he aprendido más de lo que me esperaba sobre los arrays y las tuplas en TypeScript, habiendo trabajado distintos ejercicios donde los pude desarrollar. Sin embargo el ejercicio 5 teoricamente lo entendí y lo estructuré pero en la práctica no salió como esperaba.
 
 
 
