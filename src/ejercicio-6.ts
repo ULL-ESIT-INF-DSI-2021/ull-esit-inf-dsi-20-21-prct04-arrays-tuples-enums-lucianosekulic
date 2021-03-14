@@ -1,26 +1,26 @@
 type point = [number, number];
-function sumar(puntoA: [number, number], puntoB: [number, number]){
+function sumar(puntoA: point, puntoB: point){
 let puntoC: point = puntoA;
 puntoC[0] += puntoB[0];
 puntoC[1] += puntoB[1];
 return puntoC;
 }
 
-function restar(puntoA: [number, number], puntoB: [number, number]) {
+function restar(puntoA: point, puntoB: point) {
   let puntoC: point = puntoA;
   puntoC[0] += puntoB[0];
   puntoC[1] += puntoB[1];
   return puntoC;
 }
 
-function multiplicar(puntoA: [number, number], num: number) {
+function multiplicar(puntoA: point, num: number) {
   let puntoC: point = puntoA;
   puntoC[0] = puntoC[0] * num;
   puntoC[1] = puntoC[1] * num;
   return puntoC;
 }
 
-function euclidean(puntoA: [number, number], puntoB: [number, number]) {
+function euclidean(puntoA: point, puntoB: point) {
   let distEuclidean: number = 0;
   distEuclidean = Math.sqrt((Math.pow((puntoA[1] - puntoA[0]), 2) + Math.pow((puntoB[1] - puntoB[0]), 2)));
   return distEuclidean;

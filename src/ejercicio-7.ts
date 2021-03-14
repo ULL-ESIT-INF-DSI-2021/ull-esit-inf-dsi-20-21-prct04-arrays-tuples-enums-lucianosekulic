@@ -1,6 +1,6 @@
 type pointN = [number, number][];
 
-function sumarN(puntoA: [number, number][], puntoB: [number, number][]) {
+function sumarN(puntoA: pointN, puntoB: pointN) {
   let puntoC: pointN = puntoA;
 
   if(puntoA.length == puntoB.length) {  
@@ -16,7 +16,7 @@ function sumarN(puntoA: [number, number][], puntoB: [number, number][]) {
   return puntoC;
 }
 
-function restarN(puntoA: [number, number][], puntoB: [number, number][]) {
+function restarN(puntoA: pointN, puntoB: pointN) {
   let puntoC: pointN = puntoA;
 
   if(puntoA.length == puntoB.length) {  
@@ -32,7 +32,7 @@ function restarN(puntoA: [number, number][], puntoB: [number, number][]) {
   return puntoC;
 }
 
-function multiplicarN(puntoA: [number, number][], num: number) {
+function multiplicarN(puntoA: pointN, num: number) {
   let puntoC: pointN = puntoA;
 
     for (let i = 0; i < puntoA.length; i++) {
@@ -43,7 +43,7 @@ function multiplicarN(puntoA: [number, number][], num: number) {
   return puntoC;
 }
 
-function euclideanN(puntoA: [number, number][], puntoB: [number, number][]) {
+function euclideanN(puntoA: pointN, puntoB: pointN) {
   let distEuclidean: number = 0;
 
   if(puntoA.length == puntoB.length) {  
