@@ -3,8 +3,8 @@ type punto = [number, number];
 
 function agent(x: number, y: number, puntoA: punto, puntoB: punto) {
   let arrayFinal: string = " ";
-  let numX: number = 0;
-  let numY: number = 0;
+  let numX: number = x;
+  let numY: number = y;
 
   while(puntoA[0] != puntoB[0] && puntoA[1] != puntoB[1]) {
     if(puntoA[numY] < puntoB[numY]) {
