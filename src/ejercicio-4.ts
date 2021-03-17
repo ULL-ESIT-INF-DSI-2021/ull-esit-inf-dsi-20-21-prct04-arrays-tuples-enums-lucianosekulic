@@ -1,16 +1,15 @@
-function moveZeros (MyArray: number[]) {
-  let numero : number[] = [];
+export function moveZeros(MyArray: number[]): number[] {
+  let numero: number[] = [];
   let cont: number = 0;
 
   for (let i = 0; i < MyArray.length; i++) {
     if (MyArray[i] != 0) {
       numero.push(MyArray[i]);
-    }
-    else {
+    } else {
       cont++;
     }
   }
-  for (let i = 0; i < cont; i++){
+  for (let i = 0; i < cont; i++) {
     numero.push(0);
   }
   return numero;

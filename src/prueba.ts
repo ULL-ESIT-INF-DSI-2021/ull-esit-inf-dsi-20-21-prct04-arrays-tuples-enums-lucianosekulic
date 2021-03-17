@@ -34,9 +34,3 @@ export function decodeResistor(
   }
   return arrayAux;
 }
-
-export function add(first: number, second: number): number {
-  return first + second;
-}
-
-console.log(add(1, 2));
