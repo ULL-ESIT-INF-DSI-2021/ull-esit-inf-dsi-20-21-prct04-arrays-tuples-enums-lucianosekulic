@@ -7,7 +7,7 @@ import { add } from "../src/ejercicio-1";
 describe("Prueba de las resistencias", () => {
   it("Funciona", () => {
     const valores: string[] = ["negro", "blanco", "amarillo"];
-    const resultado: string = "09";
+    const resultado: string = "094";
     expect(decodeResistor("negro", "blanco", "amarillo")).to.be.equal(
       resultado
     );
